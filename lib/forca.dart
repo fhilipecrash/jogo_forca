@@ -139,7 +139,7 @@ class _ForcaPageState extends State<ForcaPage>
       letrasEscolhidas.add(letra);
       if (!letraExisteNaPalavra(letra)) {
         erroCount++;
-        if (erroCount >= 4) {
+        if (erroCount >= 3) {
           mostrarDicas = true;
           _animationController.forward();
         }
